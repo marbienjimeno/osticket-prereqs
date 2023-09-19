@@ -275,6 +275,7 @@ Copy, paste, and go to the following URL inside the browser: [https://drive.goog
    Go to the Installation Files folder and download "osTicket-v1.15.8.zip".
 </p>
 
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/b907cc40-65b8-47e9-b2ba-25aff79580db)
 
 
 
