@@ -277,12 +277,169 @@ Copy, paste, and go to the following URL inside the browser: [https://drive.goog
 
 ![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/b907cc40-65b8-47e9-b2ba-25aff79580db)
 
+<p>
+   When the file has downloaded, navigate inside the osTicket-v1.15.8 file in File Explorer. Open another File Explorer window and navigate to C:\inetpub\wwwroot. Copy the upload folder insider osTicket-v1.15.8 into the wwwroot folder. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/05ff9467-6aa5-4bef-a3b5-14520ad58c5d)
+
+<p>
+   When the upload folder has finished copying into the wwwroot folder, rename it to "osTicket".
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/8b30f563-ac92-46d8-8a64-70aedfacdaef)
+
+<p>
+   Go back to the IIS Manager and restart the VM-osTicket server. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/ba824cfc-ec94-41f6-bc32-97990967c2b0)
+
+<p>
+   On the left sidebar, go to Sites > Default Web Site > osTicket. Then click Browse *:80 (http) on the right sidebar. Inside the browser, osTicket Installer should appear stating that some extensions are not enabled. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/afbb132b-4ad2-48f8-8fc2-c0df78b6b333)
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/1f098047-8b34-4ed8-81e3-50c104e05911)
+
+<p>
+   To enable the additional PHP extensions, go back to IIS Manager with osTicket selected on the left sidebar. Open PHP Manager.  
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/33c09c97-3543-409e-a517-38ace97b12a6)
+
+<p>
+   Inside PHP Manager, under PHP Extensions, click on Enable or disable an extension. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/63c6dda6-5f77-423b-895e-7bc771026e1f)
 
 
+<p>
+   We will enable the following additional extensions: php_imap.dll, php_intl.dll, and php_opcache.dll. 
+</p>
 
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/7908f3e1-f273-41e9-8adc-c5a43364d158)
 
+<p>
+   Go back to the osTicket Installer on the browser and refresh the page. We see that the additional PHP extensions we enabled now have a green check mark. 
+</p>
 
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/98cfcd40-c084-4ada-acac-2411d42dae95)
 
+**8. Rename "ost-sampleconfig.php" to "ost-config.php". Assign the necessary permissions in ost-config.php.**
+<p>
+   Go to File Explorer and navigate to the C:\inetpub\wwwroot\osTicket\include folder. Scroll down to find the ost-sampleconfig.php file and rename it to "ost-config.php".
+</p>
 
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/725f0d96-7ca8-4179-917f-acdd4bfdb9c7)
 
+<p>
+   Now we'll change the permissions of ost-config.php to alow Everyone to make changes to the file. This ensures that the osTicket Installer will have no trouble editing the file during installation. 
+</p>
 
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/b0231e6e-0206-4f02-b765-9de5fa882235)
+
+<p>
+   Inside ost-config.php Properties, go to the Security tab and click Advanced. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/5fdd18fd-65e4-4fb2-a84f-8c0caf0bd53d)
+
+<p>
+   Inside Advanced Security Settings, click on Disable inheritance and select Remove all inherited permissions from this object.
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/c766b90e-c19c-4a76-87df-7127e11dd766)
+
+<p>
+   After all previous permissions have been cleared, click Add. Click Select a principal. In the text box, enter "everyone" and click on Check Names. Then click OK. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/ea31b028-8fb0-4504-ab1f-473c0855bb89)
+
+<p>
+   Check the Full control box and click OK. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/71bd9d93-ef14-4ad6-94c2-e1b8205c8e66)
+
+<p>
+   Click Apply to apply the permissions then click OK. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/bd2abb88-433e-42ad-b9cc-a812d93d6135)
+
+**9. Continue osTicket setup in the browser. Download and install HeidiSQL from the installation files and create an "osTicket" database. Finish the osTicket setup and install.**
+<p>
+   Go back to osTicket Installer on the Browser and click Continue. For Helpdesk Name, enter "<your name> Help Desk". For Default Email, enter "<your name>@osticket.com". Enter your First Name, Last Name, and Email Address. For Username, we will use "user_admin". For Password, we'll use "Password1". Make sure to record the username and password for future reference.
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/f61c05c4-f903-46cc-8bf2-d5bc4fd4bba7)
+
+<p>
+   Before setting up the Database Settings, we will need to create a database for osTicket. From the Installation Files folder, download HeidiSQL. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/557f76ee-e12d-4037-b184-c0b0e54d1122)
+
+<p>
+   When the file has finished downloading, open the file and proceed with the HeidiSQL installation wizard. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/c3f12579-270f-46ab-8af1-cc22378c1792)
+
+<p>
+   Inside HeidiSQL, click on New to create a new session and enter the root MySQL password, "Password1", we previously setup. Click Open. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/075237c1-9a4c-4f1c-ba8e-47b9abc9784e)
+
+<p>
+   to create a new database, right-click Unnamed and select Create new > Database. We will name the databse "osTicket". Click OK. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/23159f78-dc5b-4a36-8ec3-c04f06766313)
+
+<p>
+   Back in osTicket Installer, we can proceed with the Database settings. For MySQL Database, enter "osTicket", the database we just created. For MySQL Username, enter "root". For MySQL Password, enter "Password1". Click Install Now. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/27a430ee-e9ca-4d1f-95c2-4cb7b6f1a883)
+
+<p>
+   We have successfully installed osTicket. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/b98e778e-62b1-49ab-94ac-9ca226f0daf2)
+
+**10. Perform final cleanup.**
+<p>
+   We will now perform a final cleanup before concluding the installation process. In File Explorer, navigate to C:\inetpub\wwwroot\osTicket and delete the setup folder. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/42dac6b3-7cb0-4c7e-b920-af41e4228976)
+
+<p>
+   Now, navigate to C:\inetpub\wwwroot\osTicket\include and change the permissions of ost-config to Read only. Click OK. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/6ee4a849-54ad-45d4-8938-f96aec444b92)
+
+<p>
+   Now we'll try logging in to osTicket as an Admin. Back in the browser, copy, paste, and go to the following URL: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php). Login to osTicket with "user_admin" for the username and "Password1" as the password. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/e1cbcf0e-6f3c-4744-bcbe-04a6578f6eaf)
+
+<p>
+   We are successfully able to login to osTicket. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/fc1dffe4-1800-4c88-b1a3-eca4cfc49fe5)
+
+**Conclusion**
+<p>
+   In this lab, we installed osTicket and its necessary prerequisites. We were able to login as an Admin and confirm that it was successfully installed. In the next section, we will perform the post-installation configuration of osTicket. 
+</p>
