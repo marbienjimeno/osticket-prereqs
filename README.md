@@ -79,4 +79,24 @@ We'll use the default settings for Disks. Click Next: Networking >
 
 ![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/2974be59-469d-47cb-a982-3e385b6e6844)
 
+<p>
+   Now we'll connect to the newly created Windows 10 VM using Remote Desktop. Copy VM-osTicket's Public IP address into Remote Desktop Connection and click Connect. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/29b17d1e-c908-44c7-90d7-c0f61861a67e)
+
+<p>
+   Log in using the credentials entered when setting up the VM. For User name, enter "labuser". For Password, enter "Password1234!". click OK.  
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/aed74bf3-3ccd-4ca2-a596-4a1cd9d36788)
+
+<p>
+   A warning will appear regarding the VM's certificate verification. Click Yes to connect anyway. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/5704b692-f6c1-48d2-b4ae-2c782aa3d86c)
+
+Now that we have connected into the Windows 10 VM, we'll begin the osTicket installation process.
+
 
