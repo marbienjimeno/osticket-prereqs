@@ -15,14 +15,19 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
+<h2>High-Level Steps</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
-
+1. Create an Azure Virtual Machine with Windows 10 and 4 virtual CPUs.
+2. Install and enable IIS in Windows with CGI, all Common HTTP features, and IIS Management Console.
+3. From the installation files, download and install PHP manager for IIS and Rewrite Module.
+4. Create the directory C:\PHP. Download PHP 7.3.8 and unzip its contents into C:\PHP.
+5. From the installation files, download and install VC_redist.x86.exe and MySQL 5.5.62.
+6. Open IIS as an Admin, register PHP from within IIS, and reload IIS.
+7. Open osTicket on the browser and enable additional PHP extensions.
+8. Rename "ost-sampleconfig.php" to "ost-config.php". Assign the necessary permissions in ost-config.php.
+9. Continue osTicket setup in the browser. Download and install HeidiSQL from the installation files and create an "osTicket" database. Finish the osTicket setup and install.
+10. Perform final cleanup.
+   
 <h2>Installation Steps</h2>
 
 <p>
