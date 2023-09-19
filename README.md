@@ -15,7 +15,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Windows 10</b> (21H2)
 
-<h2>High-Level Steps of Prerequisites and Installation</h2>
+<h2>High-Level Steps</h2>
 
 1. Create an Azure Virtual Machine with Windows 10 and 4 virtual CPUs.
 2. Install and enable IIS in Windows with CGI, all Common HTTP features, and IIS Management Console.
