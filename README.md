@@ -32,20 +32,51 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 **1. Create an Azure Virtual Machine with Windows 10 and 4 virtual CPUs.**
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+We'll start by creating a new Resource group. We'll give it the name "RG-osTicket". For Region, select the region that best applies. In this lab, we'll select "(US) West US 3". Click Review and create. 
 </p>
-<br />
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/27a982cb-a64e-4cb3-a7fc-54e64d3f23e1)
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/cb803f19-eb6f-45bf-9b0f-b66231d45e66)
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   When the validation process has passed, click Create. 
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/74540534-613e-4c5f-b500-5b1ac3f2bd68)
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+   After the RG-osticket resource group has been created, create a new Azure virtual machine. For Resource group, select the previously created "RG-osTicket". For its name, we'll enter "VM-osTicket". For Region, select the same region used when creating the resource group. We'll select "(US) West US 3". For Availability options, select "No infrastructure redundancy required". For Image, select the Windows 10 Pro option. For Size, select "Standard_D4s_v3 - 4 vcpus, 16 GiB memory ($140.16/month)". For Username, we'll use "labuser". For Password, we'll use "Password1234!". Make sure to record the username and password for future reference. Under Licensing, check the box stating "I confirm I have eligible Windows 10/11 license with multi-tenant hosting rights". Click Next: Disks >.
+</p>  
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/7cfa368a-c3e3-4bff-96e5-103c63af9c79)
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/2850135f-c5f0-4014-a1cb-47d7b9269adf)
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/edcf5284-3b61-4788-9105-08271851c674)
+
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+We'll use the default settings for Disks. Click Next: Networking >
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/a1a6f2d7-fa0b-4729-b86e-65121f4e0d1b)
+
+<p>
+   For Virtual network, we see that a new "VM-osTicket-vnet" has been created. For Subnet, our virtual network has been assigned 10.0.0.0/24 by default. For Public IP, a new "VM-osTicket-ip" has been created. Click Review + create.  
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/2923e97d-3fee-4752-aed6-eb4e0d12291e)
+
+<p>
+   After the validation process has passed, click Create. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/58e679da-f36b-4c63-9775-0f88aaf96dcc)
+
+<p>
+   After the deployment process has completed, click Go to resource. We have successfully created a new Windows 10 VM. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/2974be59-469d-47cb-a982-3e385b6e6844)
+
+
