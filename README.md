@@ -101,4 +101,83 @@ Now that we have connected into the Windows 10 VM, we'll begin the osTicket inst
 
 ![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/9a32acf4-de59-483b-a1a5-89bd936f612d)
 
-Copy the following URL into the browser: [https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6).
+Copy, paste, and go to the following URL inside the browser: [https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6). This Google Drive folder contains the installation files required for osTicket. 
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/44c8ecaa-8345-4fa5-9b1f-49557d114655)
+
+**2. Install and enable IIS in Windows with CGI, all Common HTTP features, and IIS Management Console.**
+
+<p>
+   Before downloading any files, we will install and enable IIS in Windows. In the search bar, enter "control panel". Open Control Panel. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/e07f39f7-5e41-46fe-bc57-6d94a76227db)
+
+<p>
+   Inside Control Panel, go to Programs. Then click "Turn Windows features on or off". 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/5a634009-a248-4d97-8407-dc08aedaa70e)
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/c95fb88d-c740-47f8-a24e-db0ec8a0215b)
+
+<p>
+   Check and expand "Internet Information Services". 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/e17be29e-a427-46f4-bb5d-d66cad2f3ce2)
+
+<p>
+   Expand "World Wide Web Services". Expand "Application Development Features". Check the box next to "CGI".
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/3e94636e-3b85-467f-9101-cab319143519)
+
+<p>
+   Collapse "Application Development Features" and expand "Common HTTP Features". Check all the options available. Click OK. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/0854e872-4f8f-4d0b-a1d0-2cf5f7843ec9)
+
+<p>
+   After IIS has finished installing, we'll confirm the installation by going to the browser and going to the IP address "127.0.0.1". The following page should appear to confirm the IIS installation. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/670cec37-6113-4f77-8474-2ef0b4725d5f)
+
+**3. From the installation files, download and install PHP manager for IIS and Rewrite Module.**
+
+<p>
+   Now we'll download PHP manager for IIS. From the Installation Files folder, download "PHPManagerForIIS_V1.5.0.msi".
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/d78c11a7-f12a-4497-a6e7-dc531eb39efa)
+
+<p>
+   When the file has finished downloading, open the file and follow the wizard to proceed with its installation. Click Close after PHP Manager for IIS has finished installing. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/045b3042-ef5c-41ae-b5e0-a2eac6df5157)
+
+<p>
+   Next, from the Installation Files folder, we'll download "rewrite_amd64_en-US.msi".
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/96701209-c18d-4d75-9f01-91b6d33b3450)
+
+<p>
+   Once the file has downloaded, open the file and proceed with the installation wizard. When the Rewrite module has installed, click Finish. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/bc7cb2c1-1331-429c-877c-24f64024b652)
+
+**4. Create the directory C:\PHP. Download PHP 7.3.8 and unzip its contents into C:\PHP.**
+
+
+
+
+
+
+
+
+
