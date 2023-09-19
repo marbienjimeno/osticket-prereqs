@@ -173,6 +173,110 @@ Copy, paste, and go to the following URL inside the browser: [https://drive.goog
 
 **4. Create the directory C:\PHP. Download PHP 7.3.8 and unzip its contents into C:\PHP.**
 
+<p>
+   Open File Explorer and navigate to the C: folder. Inside C:, create a new folder and name it "PHP".
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/f1fc4c32-d7d9-43a5-9116-fac0e2bd174f)
+
+<p>
+   Close File Explorer and go to the Installation Files folder. Dowload the file "php-7.3.8-nts-Win32-VC15-x86.zip". The download may take a few moments to begin. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/c92309bf-a479-4252-b66b-1182e2707d89)
+
+<p>
+   When the file has finished downloading, go to File Explorer and navigate to the file. Right-click the file and click Extract All....
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/2da0c4fa-1ea7-45e1-97e1-8aa74cd17e87)
+
+<p>
+   Extract the contects of the downloaded file into C:\PHP.
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/a2935616-cfc0-4ef1-95cf-bee41ff8e9b6)
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/3ccbe05f-caf3-4cf9-928e-50e331d5cd5b)
+
+**5. From the installation files, download and install VC_redist.x86.exe and MySQL 5.5.62.**
+<p>
+   Close File Explorer. From the Installation Files folder, download "VC_redist.x86.exe".
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/f6aedb77-2129-410d-ba37-1f05f28e8d0b)
+
+<p>
+   After the file had downloaded, click the file. Follow the installation wizard and click Close when the installation has finished.
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/95ef258a-1f2a-4750-bb54-456a9c45bdce)
+
+<p>
+   From the Installation Files folder, download "mysql-5.5.62-win32.msi".
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/de767eaf-862b-43ab-999e-0cb368db2cbc)
+
+<p>
+   When the file has downloaded, Open the file. Inside the installation wizard, for the Setup Type, choose Typical. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/06331eae-efd8-4141-9622-0a7c7220ac93)
+
+<p>
+   Click to check "Launch the MysQL Instance Configuration Wizard" and click Finish. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/41f9c437-daf4-4537-ba79-902f95ad5799)
+
+<p>
+   Inside the MysQL Instance Configuration Wizard, select "Standard Configuration". 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/069aabe6-58d6-4a10-9361-bc006d56a145)
+
+<p>
+   For the root password of the root account, we'll enter "Password1". Make sure to remember this password for future reference. 
+<p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/e7cfa553-0d0f-45ff-9b7a-3e2e186f031a)
+
+<p>
+   Click on Execute to begin the MySQL instance configuration. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/34e0cc8a-15c4-4220-86cf-5e1ff816b048)
+
+**6. Open IIS as an Admin, register PHP from within IIS, and reload IIS.**
+<p>
+   After MySQL has been installed, go to the search bar and enter "IIS". Right-click the IIS Manager app and click Run as Administrator. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/99db4834-626a-4aa4-8b0b-36d9773a564e)
+
+<p>
+   Double-click PHP Manager. We see that PHP is currently not enabled. Click on Register new PHP version. Navigate to C:\PHP\php-7.3.8-nts-Win32-VC15-x86 (right-click and download)\ and select php-cgi. 
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/ba86182a-a288-4bf5-9307-a6ad4cdedb94)
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/f924a58c-8d6c-40ab-9e00-7d876f746639)
+
+<p>
+   Click on VM-osTicket (VM-osTicket\labuser) on the left side-bar. On the right side-bar, click on Restart to reload IIS to ensure that our PHP configuration is applied.  
+</p>
+
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/32589abd-b198-4629-be0c-50ff355bf4a1)
+
+**7. Open osTicket on the browser and enable additional PHP extensions.**
+
+<p>
+   Go to the Installation Files folder and download "osTicket-v1.15.8.zip".
+</p>
+
+
+
 
 
 
