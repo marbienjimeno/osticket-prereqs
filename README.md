@@ -97,6 +97,8 @@ We'll use the default settings for Disks. Click Next: Networking >
 
 ![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/5704b692-f6c1-48d2-b4ae-2c782aa3d86c)
 
-Now that we have connected into the Windows 10 VM, we'll begin the osTicket installation process.
+Now that we have connected into the Windows 10 VM, we'll begin the osTicket installation process. Inside the Windows VM, open the Microsoft Edge browser. 
 
+![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/9a32acf4-de59-483b-a1a5-89bd936f612d)
 
+Copy the following URL into the browser: [https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6).
