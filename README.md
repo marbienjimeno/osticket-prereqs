@@ -428,7 +428,7 @@ Copy, paste, and go to the following URL inside the browser: [https://drive.goog
 ![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/6ee4a849-54ad-45d4-8938-f96aec444b92)
 
 <p>
-   Now we'll try logging in to osTicket as an Admin. Back in the browser, copy, paste, and go to the following URL: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php). Login to osTicket with "user_admin" for the username and "Password1" as the password. 
+   Now we'll try logging in to osTicket as an Admin. Back in the browser, copy, paste, and go to the following URL: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php) . Login to osTicket with "user_admin" for the username and "Password1" as the password. 
 </p>
 
 ![image](https://github.com/marbienjimeno/osticket-prereqs/assets/29347863/e1cbcf0e-6f3c-4744-bcbe-04a6578f6eaf)
